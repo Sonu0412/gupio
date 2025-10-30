@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+    <header class="header">
+        <h1>My Portfolio</h1>
+        <button id="toggle-dark-mode">Dark mode</button>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello I'm Sonu, a passionate web developer who loves creating interactive, user-friendly web applications.</p>
+        </section>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Python</div>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card"><h3>CodeCamp-A learning App</h3><p>A Learning tool for all the students to improve the skills</p></div>
+                <div class="project-card"><h3>Simple Calculator</h3><p>A simple calci to build my skills</p></div>
+                <div class="project-card"><h3>Personal Portfolio</h3>
+                <p>A responsive portfolio to showcase my skills and projects.</p></div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="contacts-grid">
+            <form id="ContactForm">
+                <div class="contact-card"><input type="text" id="name" placeholder="Your name" required></div>
+                <input type="text" id="email" placeholder="Your email" required>
+                <div class="contact-card"><textarea id="message" placeholder="Your message" required></textarea></div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>  
+</body>
+</html>

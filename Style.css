@@ -1,0 +1,82 @@
+body{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    color:black;
+    background-color: white;
+    transition: background-color 0.3s,color 0.3s;
+}
+header, footer{
+    background-color: rgb(245, 210, 216);
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+button{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+button:hover{
+    background-color:rgb(182, 182, 221);
+    color: black;
+}
+.section{
+    padding: 1rem 1rem;
+    max-width: 900px;
+    margin: auto;
+}
+h2{
+    color: black;
+}
+.skills-grid, .projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 1rem;
+}
+.skill-card, .project-card{
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+input, textarea{
+    padding: 0.8rem;
+    border: 1px solid silver;
+}
+textarea{
+    resize: none;
+    height: 50px;
+}
+footer{
+    margin-top: 2rem;
+}
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+.dark-mode header, .dark-mode footer{
+    background-color: pink;
+}
+.dark-mode .skill-card, .dark-mode .project-card{
+    background-color: black;
+    border-color: black;
+}
